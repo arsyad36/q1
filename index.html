@@ -447,16 +447,14 @@ function startTimer(){
   timeNum.textContent = remaining;
   progressBar.style.width = "100%";
 
-  countdownInterval = setInterval(()=>{
+	DipikirSound.currentTime = 0;
+  DipikirSound.play().catch(()=>{});
+
+	countdownInterval = setInterval(()=>{
   if(!timerActive) return;
 
   remaining--;
   timeNum.textContent = remaining;
-
-	  startTimer();
-
-DipikirSound.currentTime = 0;
-DipikirSound.play().catch(()=>{});
 	  
   progressBar.style.width = (remaining / (TIME_LIMIT/1000)) * 100 + "%";
     progressBar.className = "";
