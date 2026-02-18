@@ -251,35 +251,56 @@ body.page-ready{opacity:1}
 .final-actions{
   margin-top:20px;
   display:grid;
-  gap:12px;
+  gap:14px;
 }
 
 .final-actions button{
   padding:14px;
   border:none;
-  border-radius:14px;
+  border-radius:16px;
   cursor:pointer;
   font-size:1rem;
-  transition:.25s ease;
+  font-weight:600;
+  letter-spacing:.5px;
+  transition:all .25s ease;
+  color:white;
+  position:relative;
+  overflow:hidden;
 }
-
 #retryBtn{
-  background:#020617;
-  color:#020617;
+  background:linear-gradient(135deg,#22c55e,#16a34a);
+  box-shadow:0 4px 14px rgba(34,197,94,.4);
 }
-#retryBtn:hover{background:#16a34a}
+#retryBtn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 22px rgba(34,197,94,.55);
+}
+#retryBtn:active{
+  transform:scale(.96);
+}
 
 #explainBtn{
-  background:#020617;
-  color:#020617;
+  background:linear-gradient(135deg,#3b82f6,#1d4ed8);
+  box-shadow:0 4px 14px rgba(59,130,246,.4);
 }
-#explainBtn:hover{background:#1d4ed8}
-
+#explainBtn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 22px rgba(59,130,246,.55);
+}
+#explainBtn:active{
+  transform:scale(.96);
+}
 #shareBtn{
-  background:#020617;
-  color:#020617;
+  background:linear-gradient(135deg,#f59e0b,#ca8a04);
+  box-shadow:0 4px 14px rgba(245,158,11,.4);
 }
-#shareBtn:hover{background:#ca8a04}
+#shareBtn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 22px rgba(245,158,11,.55);
+}
+#shareBtn:active{
+  transform:scale(.96);
+}
 .review-item{
   opacity:0;
   transform:translateY(25px);
