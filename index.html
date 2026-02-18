@@ -453,9 +453,9 @@ function startTimer(){
   remaining--;
   timeNum.textContent = remaining;
 	  
-	  const tick = new Audio("Dipikir.mp3?v=3");
-	  tick.play();
-
+	  DipikirSound.currentTime = 0;
+	  DipikirSound.play();
+	  
   progressBar.style.width = (remaining / (TIME_LIMIT/1000)) * 100 + "%";
     progressBar.className = "";
     progressBar.classList.add(
